@@ -3,17 +3,20 @@ body {
   background: #ffd6e7; /* soft light pink */
   font-family: Arial, sans-serif;
   color: #c4002f; /* elegant red */
+  overflow-x: hidden; 
   overflow-y: auto;
 }
 
 /* center layout */
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
   text-align: center;
   width: 85%;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 /* headings */
