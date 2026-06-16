@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="center">
+
+  <h2>The things I like / love about you ❤️</h2>
+
+  <p>1. You have really beautiful eyes</p>
+  <p>2. I like your laugh when I catch you in a lie</p>
+  <p>3. I like how you make ordinary moments feel special</p>
+  <p>4. I love your smile</p>
+  <p>5. I like our calls</p>
+  <p>6. I like how things feel easy with you</p>
+  <p>7. I love how you get pissed and I have to baby you</p>
+  <p>8. I love your tantrums when I mess up so I know you care</p>
+  <p>9. Your music taste (we gotta make our own playlists)</p>
+  <p>10. I love how strict she is with you</p>
+  <p>11. I love how much we are alike</p>
+  <p>12. I like how passionate you get with things</p>
+  <p>13. I love the VN recaps about your day</p>
+  <p>14. I love how you take charge of stuff</p>
+  <p>15. I love how fun you are with everything</p>
+  <p>16. I like how you talk about the future with me included</p>
+  <p>17. I love how freaked out you are with me</p>
+  <p>18. I absolutely love your voice</p>
+  <p>19. I love the TikToks you send me (lowkey wished there were more)</p>
+  <p>20. I love how you don’t remind me of anyone so everything feels new with you</p>
+
+  <a href="page3.html">
+    <button>Continue</button>
+  </a>
+
+</div>
+
+<script>
+const emojis = ["❤️","💖","💘","💍","💕"];
+
+function drop() {
+  const e = document.createElement("div");
+  e.classList.add("emoji");
+
+  e.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+
+  e.style.left = Math.random() * 100 + "vw";
+  e.style.animationDuration = (Math.random() * 3 + 2) + "s";
+  e.style.fontSize = (Math.random() * 20 + 20) + "px";
+
+  document.body.appendChild(e);
+
+  setTimeout(() => e.remove(), 5000);
+}
+
+setInterval(drop, 200);
+</script>
+
+</body>
+</html>
