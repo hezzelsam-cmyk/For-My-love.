@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #ffd6e7; /* soft light pink */
+  font-family: Arial, sans-serif;
+  color: #c4002f; /* elegant red */
+  overflow: hidden;
+}
+
+/* center layout */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 85%;
+}
+
+/* headings */
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+/* paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* button styling */
+button {
+  padding: 10px 18px;
+  border: none;
+  background: #c4002f;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* ========================= */
+/* FLOATING EMOJIS */
+/* ========================= */
+
+.emoji {
+  position: absolute;
+  top: -40px;
+  font-size: 24px;
+  opacity: 0.9;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+/* ========================= */
+/* ENVELOPE (PAGE 2) */
+/* ========================= */
+
+.envelope {
+  width: 180px;
+  height: 120px;
+  background: #c4002f;
+  position: relative;
+  margin: 40px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* envelope flap */
+.envelope:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 60px solid #ff4d6d;
+}
+
+/* hidden letter */
+.letter {
+  display: none;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
