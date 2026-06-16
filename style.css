@@ -3,7 +3,7 @@ body {
   background: #ffd6e7; /* soft light pink */
   font-family: Arial, sans-serif;
   color: #c4002f; /* elegant red */
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 /* center layout */
